@@ -12,7 +12,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(methodOverride('_method'));
 app.set('view engine', 'ejs');
-const mongoURI = 'mongodb://brad:brad@ds257838.mlab.com:57838/mongouploads';
+const mongoURI = 'mongodb://localhost:27017/multerdatabase ';
 const conn = mongoose.createConnection(mongoURI);
 let gfs;
 
